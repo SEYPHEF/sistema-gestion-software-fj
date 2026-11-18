@@ -52,7 +52,7 @@ class Cliente(EntidadSistema):
     return f"Cliente [ID: {self.identificador}, Nombre: {self.nombre}, Email: {self.email}]"
 
 
-class Servicio(ABC, EntidadSistema):
+class Servicio(EntidadSistema):
 
   def __init__(self, identificador: str, nombre_servicio: str, precio_base: float):
     super().__init__(identificador)
